@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+    background: #d6eef1;
+}
+
+.container form {
+    width: 700px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.container form .row .col {
+    flex: 1 1 250px;
+}
+
+.col .title {
+    font-size: 20px;
+    color: rgb(237, 55, 23);
+    padding-bottom: 5px;
+}
+
+.col .inputBox {
+    margin: 15px 0;
+}
+
+.col .inputBox label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.col .inputBox input,
+.col .inputBox select {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.col .inputBox input:focus,
+.col .inputBox select:focus {
+    border: 1px solid #000;
+}
+
+.col .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.col .flex .inputBox {
+    flex: 1 1;
+    margin-top: 5px;
+}
+
+.col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit_btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: rgb(1, 143, 34);
+    color: #fff;
+    margin-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.container form .submit_btn:hover {
+    background: #3d17fb;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    display: none;
+}
+
+/*------HEADER------*/
+
+.alert {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    background: rgb(255, 250, 245);
+    color: #fff;
+    font-weight: 800;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 20px;
+    width: 300px;
+    height: 100vh;
+    border-radius: 10px;
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.alert .navigation1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.alert .navigation1 li a {
+    text-decoration: none;
+    color: #57557D;
+}
+
+.alert p {
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+.alert i {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    cursor: pointer;
+    color: #57557D;
+}
+
+header .hamburger {
+    display: none;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px 60px;
+    background: rgb(255, 250, 245);
+    position: fixed;
+    border-bottom: 1px solid #aaa;
+}
+
+header .logo {
+    color: rgb(48, 47, 81);
+    font-weight: bold;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 60px;
+    list-style: none;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: rgb(48, 47, 81);
+    transition: .5s;
+}
+
+header .navigation li a:hover {
+    color: rgb(153, 150, 252);
+}
+
+/*------FOOTER------*/
+
+.contact {
+    margin: 0 80px;
+    border-top: 1px solid rgb(48, 47, 81);
+    border-bottom: 1px solid rgb(48, 47, 81);
+}
+
+.contact .footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .links .navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer .links .navigation li a {
+    text-decoration: none;
+    color: rgb(48, 47, 81);
+    transition: .5s;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+footer .links .navigation li a:hover {
+    color: rgb(153, 150, 252);
+}
+
+.footer .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    font-size: 1.1em;
+}
+
+.footer .info h1 {
+    color: rgb(48, 47, 81);
+    text-align: center;
+}
+
+.footer .cs {
+    display: flex;
+    flex-direction: column;
+    color: rgb(48, 47, 81);
+}
+
+.footer .cs ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+
+.footer .cs li {
+    text-decoration: none;
+    color: rgb(48, 47, 81);
+    transition: .5s;
+    font-size: 1.1em;
+}
+
+.footer .slinks {
+    display: flex;
+    flex-direction: column;
+    color: rgb(48, 47, 81);
+}
+
+.footer .slinks .link {
+    margin-top: 10px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form h1 {
+    font-size: 2em;
+    color: rgb(48, 47, 81);
+}
+
+.form input {
+    padding: 10px 250px;
+    background: transparent;
+}
+
+.form button {
+    padding: 10px 300px;
+    color: #fff;
+    background: #F88D58;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.strip {
+    background: rgb(48, 47, 81);
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.strip h1 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.strip .icons a {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .banner {
+        margin: 0px;
+    }
+
+    .banner .title h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 10px 30px;
+    }
+
+    .shop .title p {
+        text-align: center;
+    }
+
+    .contact {
+        margin: 0px;
+    }
+
+    .about {
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .imgtext img {
+        width: 350px;
+        object-fit: cover;
+    }
+
+    .imgtext .info {
+        width: 300px;
+        left: 30px;
+        padding: 20px 20px;
+    }
+
+    .shop .content {
+        justify-content: center;
+    }
+
+    .form input {
+        padding: 10px 80px;
+    }
+
+    .form button {
+        padding: 10px 80px;
+    }
+
+    .contact .footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: rgb(48, 47, 81);
+        color: #fff;
+
+    }
+
+    .footer .links .navigation li a {
+        color: #fff;
+    }
+
+    .footer .info h1 {
+        color: #fff;
+        text-align: left;
+    }
+
+    .footer .cs {
+        color: #fff;
+    }
+
+    .footer .cs li {
+        color: #fff;
+    }
+
+    .footer .slinks {
+        color: #fff;
+    }
+
+    .footer .slinks .link a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .contact .footer {
+        padding: 30px 20px;
+        gap: 50px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header .logo {
+        font-size: 1.5em;
+    }
+}
